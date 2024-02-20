@@ -2,10 +2,8 @@
 
 var express = require('express');
 
-var app = express();
-
-var dotenv = require('dotenv').config(); // const cors = require('cors');
-
+var app = express(); // const dotenv = require('dotenv').config();
+// const cors = require('cors');
 
 var PORT = process.env.PORT || 4000; // app.use(cors());
 
