@@ -2,10 +2,12 @@ import React from 'react';
 import Helmet from 'react-helmet';           //Reactを読み込んでいる
 import './App.css';
 import axios from 'axios';
+const PORT = process.env.PORT || 4000;
+
 
 function page1() {   //page1クラスにReact.Componentを継承する
         function newAcountCleate (){
-            axios.get('http://localhost:4000/api1')
+            axios.get(`http://localhost:${PORT}/api1`)
             .then((res)=>{console.log(res.data)})
             .catch((error)=>{console.log(error)})
 
