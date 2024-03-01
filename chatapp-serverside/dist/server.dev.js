@@ -8,7 +8,7 @@ var app = express(); // const dotenv = require('dotenv').config();
 var PORT = process.env.PORT || 4000; // app.use(cors());
 
 app.get('/', function (req, res) {
-  console.log('test');
+  console.log(req.url + 'test');
 });
 app.get('/:api', function (req, res) {
   var api = req.params.api;

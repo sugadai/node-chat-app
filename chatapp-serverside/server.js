@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 4000;
 
 // app.use(cors());
 app.get('/',(req,res)=>{
-        console.log('test')
+        console.log(req.url+'test')
 })
 app.get('/:api',(req,res)=>{
     const api = req.params.api;
