@@ -20,5 +20,5 @@ app.get('/:api', function (req, res) {
     apiname: api
   });
 });
-app.listen(PORT, console.log("Server Running on port ".concat(PORT, " !!")));
+app.listen(PORT, console.log("Server Running on port Number ".concat(PORT, " !!")));
 //# sourceMappingURL=server.dev.js.map
