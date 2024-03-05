@@ -5,7 +5,6 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
-const express = require('express')
 const timeout = require('connect-timeout')
 
 // example of using this top-level; note the use of haltOnTimedout
