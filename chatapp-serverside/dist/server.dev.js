@@ -7,8 +7,6 @@ var app = express(); // const dotenv = require('dotenv').config();
 
 var PORT = process.env.PORT || 4000;
 
-var bodyParser = require('body-parser');
-
 var cookieParser = require('cookie-parser');
 
 var timeout = require('connect-timeout'); // example of using this top-level; note the use of haltOnTimedout
@@ -16,7 +14,6 @@ var timeout = require('connect-timeout'); // example of using this top-level; no
 
 
 app.use(timeout('5s'));
-app.use(bodyParser());
 app.use(haltOnTimedout);
 app.use(cookieParser());
 app.use(haltOnTimedout); // Add your routes here, etc.

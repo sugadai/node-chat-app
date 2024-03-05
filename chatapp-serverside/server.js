@@ -3,14 +3,12 @@ const app = express();
 // const dotenv = require('dotenv').config();
 // const cors = require('cors');
 const PORT = process.env.PORT || 4000;
-const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const timeout = require('connect-timeout')
 
 // example of using this top-level; note the use of haltOnTimedout
 // after every middleware; it will stop the request flow on a timeout
 app.use(timeout('5s'))
-app.use(bodyParser())
 app.use(haltOnTimedout)
 app.use(cookieParser())
 app.use(haltOnTimedout)
