@@ -4,9 +4,8 @@ var express = require('express');
 
 var app = express();
 
-var dotenv = require('dotenv').config();
+var dotenv = require('dotenv').config(); // const cors = require('cors');
 
-var cors = require('cors');
 
 var PORT = process.env.PORT || 4000; // const cookieParser = require('cookie-parser');
 // const timeout = require('connect-timeout');
@@ -19,8 +18,8 @@ var PORT = process.env.PORT || 4000; // const cookieParser = require('cookie-par
 // function haltOnTimedout (req, res, next) {
 //   if (!req.timedout) next()
 // }
+// app.use(cors());
 
-app.use(cors());
 app.get('/', function (req, res) {
   console.log(req.url + 'test');
 });
