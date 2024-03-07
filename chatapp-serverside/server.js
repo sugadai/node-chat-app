@@ -8,16 +8,16 @@ const timeout = require('connect-timeout');
 
 // example of using this top-level; note the use of haltOnTimedout
 // after every middleware; it will stop the request flow on a timeout
-app.use(timeout('5s'))
-app.use(haltOnTimedout)
-app.use(cookieParser())
-app.use(haltOnTimedout)
+// app.use(timeout('5s'))
+// app.use(haltOnTimedout)
+// app.use(cookieParser())
+// app.use(haltOnTimedout)
 
 // Add your routes here, etc.
 
-function haltOnTimedout (req, res, next) {
-  if (!req.timedout) next()
-}
+// function haltOnTimedout (req, res, next) {
+//   if (!req.timedout) next()
+// }
 
 // app.use(cors());
 app.get('/',(req,res)=>{
