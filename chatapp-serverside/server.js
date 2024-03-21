@@ -32,4 +32,4 @@ app.get('/:api',(req,res)=>{
 })
 
 
-app.listen(PORT,console.log(`Server Running on port Number ${PORT} !!`));
+app.listen(PORT,console.log(`Server Running on port ${PORT} !!`));
